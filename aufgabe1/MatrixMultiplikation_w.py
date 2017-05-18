@@ -2,11 +2,11 @@
 # Hausaufgabe 1 - Matrixmultiplikation
 # Abgabedatum: 21.5.2017
 #
-# Gruppennummer: <Bitte eintragen>
+# Gruppennummer: 63
 # Gruppenmitglieder: 
-# - <Bitte eintragen>
-# - <Bitte eintragen>
-# - <Bitte eintragen>
+# - Maximilian Budwill
+# - Wolfgang Ost
+# - Simon Christ
 
 # Diese Funktion können Sie verwenden, um Matrizen auszugeben.
 def printMatrix(m):

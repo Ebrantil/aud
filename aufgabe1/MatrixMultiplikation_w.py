@@ -49,7 +49,7 @@ def matMultDef(a, b):
     return result_m
 
 
-def mat_mult_dc(a: object, b: object) -> object:
+def matMultDC(a: object, b: object) -> object:
     # hier soll Ihre Implementierung der Matrixmultiplikation nach dem Paradigma "Teile und Herrsche"
     # number of columns in a has to match number of rows in b
     if len(b) != len(a[0]):
@@ -78,8 +78,8 @@ def mat_mult_dc(a: object, b: object) -> object:
         printmatrix(a1)
         print('a2')
         printmatrix(a2)
-        m11 = mat_mult_dc(a1, b)
-        m21 = mat_mult_dc(a2, b)
+        m11 = matMultDC(a1, b)
+        m21 = matMultDC(a2, b)
         print('Partial results:')
         print('m11')
         printmatrix(m11)
@@ -99,8 +99,8 @@ def mat_mult_dc(a: object, b: object) -> object:
         printmatrix(b1)
         print('b2')
         printmatrix(b2)
-        m11 = mat_mult_dc(a, b1)
-        m12 = mat_mult_dc(a, b2)
+        m11 = matMultDC(a, b1)
+        m12 = matMultDC(a, b2)
         print('Partial results:')
         print('m11')
         printmatrix(m11)
@@ -127,10 +127,10 @@ def mat_mult_dc(a: object, b: object) -> object:
         printmatrix(b1)
         print('b2')
         printmatrix(b2)
-        m11 = mat_mult_dc(a1, b1)
-        m12 = mat_mult_dc(a1, b2)
-        m21 = mat_mult_dc(a2, b1)
-        m22 = mat_mult_dc(a2, b2)
+        m11 = matMultDC(a1, b1)
+        m12 = matMultDC(a1, b2)
+        m21 = matMultDC(a2, b1)
+        m22 = matMultDC(a2, b2)
         print('Partial results:')
         print('m11')
         printmatrix(m11)
@@ -180,7 +180,7 @@ print(40 * "-")
 print()
 print('|Berechnung nach Divide and Conquer ')
 print('-> Zerlege in einzelne Zeilen und Spalten als Elementar')
-result = mat_mult_dc([[3, 2, 1], [1, 0, 2]], [[1, 2], [0, 1], [4, 0]])
+result = matMultDC([[3, 2, 1], [1, 0, 2]], [[1, 2], [0, 1], [4, 0]])
 print()
 print ('Ergebnis nach Divide and Conquer ')
 printmatrix(result)

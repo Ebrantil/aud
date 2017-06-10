@@ -60,6 +60,7 @@ def divide( list ):
 result = []
 def sortMerge(a):
     global result
+    print('Merge Sort')
     print('Parameter a:')
     print(a)
     # hier soll Ihre Implementierung des Mergesort - Verfahrens stehen.
@@ -90,10 +91,15 @@ def buildHeap(A):
         heapify(A,v,n)
 
 def sortHeapDesc(a):
+    print('')
+    print('Heap Sort (Descending)')
     print('Parameter a:')
     print(a)
     # hier soll Ihre Implementierung von absteigendem HeapSort stehen.
     buildHeap(a)
+    print('Original heap:')
+    print(a)
+    print('Sorting:')
     last = len(a) -1
     while(last >= 1):
         # Wurzel mit letztem Blatt tauschen
@@ -102,6 +108,7 @@ def sortHeapDesc(a):
         last = last -1
         # Heapeigenschaft wieder herstellen
         heapify(a,0,last)
+        print(a)
     result = a  # durch das Ergebnis Ihrer Implementierung ersetzen
     return result
 

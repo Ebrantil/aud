@@ -22,6 +22,7 @@ def merge( list1, list2 ):
             list[i - 1] = list[i]
             list[i] = tmp
             i = i - 1
+        if i == length1 + j: break
         j = j + 1
     return list
 
@@ -60,6 +61,7 @@ def sortMerge(a):
     divide(a)  # durch das Ergebnis Ihrer Implementierung ersetzen
     print('Result after divide:')
     print(result)
+    print('Combine:')
     combine( result )
     return result
 
@@ -70,8 +72,6 @@ def sortHeapDesc(a):
     result = a  # durch das Ergebnis Ihrer Implementierung ersetzen
     return result
 
-for i in range(0,5,2):
-    print( i )
 # Hier ist ein Testfall:
 liste = [3, 2, 1, 9, 17, 4, -1, 0, 5]
 mergeResult = sortMerge(liste)
